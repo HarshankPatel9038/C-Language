@@ -8,17 +8,19 @@ int main(){
 
     for (n=1; n<=1000; n++) {
     	
-    	n = x;
+    	x = n;
   	
-  	    while (n > 0) {
-   	        rem = n % 10;
+  	    while (x > 0) {
+   	        rem = x % 10;
    	        num = num + (rem * rem * rem);
-   	        n = n / 10;
+   	        x = x / 10;
         }
         
-        if (num == x) {
-        	printf("%d\n", x);
+        if (num == n) {
+        	printf("%d\n", n);
 		}
+		
+		num = 0;
   	
     }
 
