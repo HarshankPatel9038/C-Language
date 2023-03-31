@@ -18,7 +18,7 @@ int main() {
 	for (x=0; x<k; x++) {
 		temp = ary[n - 1];
 	    for (i=n-1; i>=0; i--) {
-		    ary[i + 1] = ary[i];
+		    ary[i] = ary[i - 1];
 	    }
 	    ary[0] = temp;
 	}
@@ -35,5 +35,6 @@ int main() {
 	 }
 	
 	return 0;
+	
 	
 }
