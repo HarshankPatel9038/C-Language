@@ -40,7 +40,7 @@ int is_prime() {
 int main() {
 	
 	int res = is_prime();
-	printf("%d \n", res);
+	printf("%d", res);
     
     
     return 0;
